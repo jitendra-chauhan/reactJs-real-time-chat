@@ -1,3 +1,7 @@
+// ---------------- jitendra ---------------- //
+// ---------------- chauhan ---------------- //
+// ------------ React Chat App ------------- //
+
 import React from "react";
 import PropTypes from "prop-types";
 
@@ -10,9 +14,6 @@ export default function Navbar(props) {
   </button>
   <div className="collapse navbar-collapse" id="navbarNav">
     <ul className="navbar-nav">
-      {/* <li className="nav-item active">
-        <a className="nav-link" href="/">{props.home} <span className="sr-only"></span></a>
-      </li> */}
       <li className="nav-item">
         <a className="nav-link" href="/" onClick={props.logOut}>LogOut</a>
       </li>

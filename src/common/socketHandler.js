@@ -1,3 +1,7 @@
+// ---------------- jitendra ---------------- //
+// ---------------- chauhan ---------------- //
+// ------------ React Chat App ------------- //
+
 import { socket } from "./socket";
 
 // handle socket on/off and refresh

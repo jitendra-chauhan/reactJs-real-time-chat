@@ -1,8 +1,11 @@
+// ---------------- jitendra ---------------- //
+// ---------------- chauhan ---------------- //
+// ------------ React Chat App ------------- //
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import logo from "../logo.svg";
 import "../css/Login.css";
-import Navbar from "../components/Navbar";
 import SignUpComp from "../components/SignUp";
 import { URL } from "../common/constants";
 

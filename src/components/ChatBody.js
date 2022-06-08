@@ -1,3 +1,6 @@
+// ---------------- jitendra ---------------- //
+// ---------------- chauhan ---------------- //
+// ------------ React Chat App ------------- //
 import React, { useState } from "react";
 import ChatMessage from "./chat/ChatMessage";
 
@@ -25,8 +28,6 @@ export default function ChatBody(props) {
             </div>
             <div className="user_info">
               <span>
-                {/* Chat with Khalidfff */}
-
                 {props.usersList?.length
                   ? `Chat with ` +
                     props.usersList.filter((d) => d._id === props.getParamId)[0]
@@ -34,14 +35,6 @@ export default function ChatBody(props) {
                   : `testing Name`}
               </span>
               <p>1767 Messages</p>
-            </div>
-            <div className="video_cam">
-              <span>
-                <i className="fas fa-video"></i>
-              </span>
-              <span>
-                <i className="fas fa-phone"></i>
-              </span>
             </div>
           </div>
           <span id="action_menu_btn" onClick={props.toggle}>
@@ -70,69 +63,6 @@ export default function ChatBody(props) {
             myId={props.userId}
             buddyId={props.getParamId}
           />
-          {/* <div className="d-flex justify-content-start mb-4">
-                <div className="img_cont_msg">
-                    <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" className="rounded-circle user_img_msg"/>
-                </div>
-                <div className="msg_cotainer">
-                    Hi, how are you samim?
-                    <span className="msg_time">8:40 AM, Today</span>
-                </div>
-            </div>
-            <div className="d-flex justify-content-end mb-4">
-                <div className="msg_cotainer_send">
-                    Hi Khalid i am good tnx how about you?
-                    <span className="msg_time_send">8:55 AM, Today</span>
-                </div>
-                <div className="img_cont_msg">
-                <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" className="rounded-circle user_img_msg"/>
-                </div>
-            </div>
-            <div className="d-flex justify-content-start mb-4">
-                <div className="img_cont_msg">
-                    <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" className="rounded-circle user_img_msg"/>
-                </div>
-                <div className="msg_cotainer">
-                    I am good too, thank you for your chat template
-                    <span className="msg_time">9:00 AM, Today</span>
-                </div>
-            </div>
-            <div className="d-flex justify-content-end mb-4">
-                <div className="msg_cotainer_send">
-                    You are welcome
-                    <span className="msg_time_send">9:05 AM, Today</span>
-                </div>
-                <div className="img_cont_msg">
-                <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" className="rounded-circle user_img_msg"/>
-                </div>
-            </div>
-            <div className="d-flex justify-content-start mb-4">
-                <div className="img_cont_msg">
-                    <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" className="rounded-circle user_img_msg"/>
-                </div>
-                <div className="msg_cotainer">
-                    I am looking for your next templates
-                    <span className="msg_time">9:07 AM, Today</span>
-                </div>
-            </div> */}
-          {/* <div className="d-flex justify-content-end mb-4">
-                <div className="msg_cotainer_send">
-                    Ok, thank you have a good day
-                    <span className="msg_time_send">9:10 AM, Today</span>
-                </div>
-                <div className="img_cont_msg">
-                <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" className="rounded-circle user_img_msg"/>
-                </div>
-            </div> */}
-          {/* <div className="d-flex justify-content-start mb-4">
-                <div className="img_cont_msg">
-                    <img src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg" className="rounded-circle user_img_msg"/>
-                </div>
-                <div className="msg_cotainer">
-                    Bye, see you
-                    <span className="msg_time">9:12 AM, Today</span>
-                </div>
-            </div> */}
         </div>
         <div className="card-footer">
           <div className="input-group">

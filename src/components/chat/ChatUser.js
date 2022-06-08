@@ -1,3 +1,7 @@
+// ---------------- jitendra ---------------- //
+// ---------------- chauhan ---------------- //
+// ------------ React Chat App ------------- //
+
 import React from "react";
 
 export default function ChatUser(props) {

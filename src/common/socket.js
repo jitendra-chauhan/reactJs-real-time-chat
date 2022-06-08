@@ -1,3 +1,7 @@
+// ---------------- jitendra ---------------- //
+// ---------------- chauhan ---------------- //
+// ------------ React Chat App ------------- //
+
 import io from "socket.io-client";
 import { URL } from "./constants";
 

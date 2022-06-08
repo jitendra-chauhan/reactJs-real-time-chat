@@ -1,4 +1,7 @@
-// import {useNavigate} from "react-router-dom";
+// ---------------- jitendra ---------------- //
+// ---------------- chauhan ---------------- //
+// ------------ React Chat App ------------- //
+
 
 function LogOut() {
     // const navigate = useNavigate();
