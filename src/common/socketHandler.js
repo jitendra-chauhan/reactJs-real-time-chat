@@ -1,5 +1,6 @@
 import { socket } from "./socket";
 
+// handle socket on/off and refresh
 const useSocket = (cb, name = "handler") => {
   const handler = {
     [name]: (r) => cb(r),

@@ -51,7 +51,6 @@ function SignUp() {
 
   return (
     <>
-      {/* <Navbar title="SignUp Page" /> */}
       <SignUpComp
         logo={logo}
         setUserName={setUserName}

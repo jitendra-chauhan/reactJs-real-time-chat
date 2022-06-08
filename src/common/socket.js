@@ -3,26 +3,21 @@ import { URL } from "./constants";
 
 let socket;
 
+// handle socket connection
 export const socketConnect = (next) => {
   console.log(process.env);
-  console.log("call thi", URL);
+  console.log("call this", URL);
   socket = io(URL.SOCKET, { transports: ["websocket"] });
 
   // Socket connection response handler
-  console.log("=22==> connect <===", socket);
 
   socket.on("disconnect", (connect) => {
-    console.log("===disconnect> connect <===", connect);
     next(socket.connected);
   });
   socket.on("connect", () => {
     console.log("===> connect <===");
     next(socket.connected);
   });
-  //   socket.emit("req", { en: "USER_LIST", data: {} });
-  //   console.log("socket.connected ::", socket.connected);
-  //   console.log("socket.disconnected ::", socket.disconnected);
-  //   next(socket.connected);
 
   // Socket response handler
   socket.on("res", (response) => {
@@ -32,11 +27,8 @@ export const socketConnect = (next) => {
     console.log("==> data <===", data);
     if (data.flag) {
       switch (en) {
-        // case "USER_LIST":
-        //   console.log("===> USER_LIST <====", data);
-        //   break;
         default:
-          console.log();
+          console.log('default:::');
           break;
       }
     } else {

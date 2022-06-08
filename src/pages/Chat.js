@@ -19,9 +19,7 @@ function Chat() {
   const { id } = useParams();
   const getParamId = id;
   console.log("===> id <===", id);
-  // setParamId(id);
   const navigate = useNavigate();
-  // const history = useHistory();
   const userId = sessionStorage.getItem("id");
   const [getSocket, setSocket] = useState(null);
   const [usersList, setUsersList] = useState([]);

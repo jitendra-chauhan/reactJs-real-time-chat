@@ -16,9 +16,9 @@ export default function ChatUser(props) {
               >
                 <div className="img_cont">
                   <img
-                    // src="https://i.pinimg.com/originals/ac/b9/90/acb990190ca1ddbb9b20db303375bb58.jpg"
                     src="https://static.turbosquid.com/Preview/001292/481/WV/_D.jpg"
                     className="rounded-circle user_img"
+                    alt="profile"
                   />
                   <span className="online_icon"></span>
                 </div>
